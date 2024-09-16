@@ -1,0 +1,47 @@
+@import "../../styles/colors.scss";
+
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.login-form-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: x-large;
+  }
+
+  .login-form {
+    .error-text {
+      color: $danger;
+      text-align: end;
+      font-size: smaller;
+      font-weight: 500;
+    }
+
+    .register-text {
+      font-size: medium;
+      font-weight: 500;
+
+      span {
+        cursor: pointer;
+        font-weight: 500;
+        color: $primary-dark;
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
